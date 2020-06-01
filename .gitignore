@@ -1,0 +1,7 @@
+env/
+env/
+tests
+tests/
+daysuntil.db
+__pycache__
+.DStore 
