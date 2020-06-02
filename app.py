@@ -1,5 +1,5 @@
 import db
-import sqlite3
+import sqlite3, os
 
 
 
@@ -9,15 +9,21 @@ import sqlite3
 #             ) ''')
 
 def main():
-    print('''1: Add event\n2: Days until ''')
+    print('''1: Add event\n2: Days until \n3: All Events\n''')
     print("==================================")
     choice = input("")
     if int(choice) == 1: 
-        print("Add Even Event")
+        os.system("clear")
+        print("You selected Add Event")
         db.add_event()
     if int(choice)==2: 
-        print("You select Days Until")
+        os.system("clear")
+        print("You selected Days Until")
         db.days_until()
+    if int(choice)==3:
+        os.system("clear")
+        print("Showing All events:")
+        db.view_dates() 
     # return  
 
 
