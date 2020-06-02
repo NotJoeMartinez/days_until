@@ -13,7 +13,7 @@ def main():
     print("==================================")
     choice = input("")
     if int(choice) == 1: 
-        print("You select Add Event")
+        print("Add Even Event")
         db.add_event()
     if int(choice)==2: 
         print("You select Days Until")
